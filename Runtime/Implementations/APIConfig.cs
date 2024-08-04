@@ -65,6 +65,19 @@ namespace HuggingFace.API {
             return false;
         }
 
+        public bool SetTaskEndpoint(string taskName, string taskEndpoint)
+        {
+            foreach (var endpoint in taskEndpoints)
+            {
+                if (endpoint.taskName == taskName)
+                {
+                    endpoint.endpoint = taskEndpoint;
+                    return true;
+                }
+            }
+            return false;
+        }
+
         public void SetAPIKey(string apiKey) {
             _apiKey = apiKey;
         }
