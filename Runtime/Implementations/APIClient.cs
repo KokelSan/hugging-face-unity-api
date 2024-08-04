@@ -52,7 +52,8 @@ namespace HuggingFace.API {
                     payload.Prepare(request);
                     request.downloadHandler = new DownloadHandlerBuffer();
 
-                    UnityWebRequestAsyncOperation asyncOp = request.SendWebRequest();
+                    Debug.Log($"Sending request to {url} \n Payload: \n {payload}");
+                    UnityWebRequestAsyncOperation asyncOp = request.SendWebRequest();                    
 
                     while (!asyncOp.isDone && (maxTimeout == 0 || (Time.realtimeSinceStartup - startTime) < maxTimeout)) {
                         yield return null;
