@@ -52,7 +52,7 @@ namespace HuggingFace.API {
                     payload.Prepare(request);
                     request.downloadHandler = new DownloadHandlerBuffer();
 
-                    Debug.Log($"Sending request to {url} \n Payload: \n {payload}");
+                    Debug.Log($"Sending request to {url} \n\n Payload: \n {payload} \n");
                     UnityWebRequestAsyncOperation asyncOp = request.SendWebRequest();                    
 
                     while (!asyncOp.isDone && (maxTimeout == 0 || (Time.realtimeSinceStartup - startTime) < maxTimeout)) {
