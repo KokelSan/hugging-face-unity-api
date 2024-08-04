@@ -64,18 +64,6 @@ namespace HuggingFace.API {
         }
 
         /// <summary>
-        /// Queries the conversation task and returns a response as a string.<br/>
-        /// Provide a conversation context to continue a conversation.
-        /// </summary>
-        /// <param name="input"></param>
-        /// <param name="onSuccess"></param>
-        /// <param name="onError"></param>
-        /// <param name="context"></param>
-        public static void Conversation(string input, Action<string> onSuccess, Action<string> onError, Conversation context = null) {
-            Query<string, string, Conversation>("Conversation", input, onSuccess, onError, context);
-        }
-
-        /// <summary>
         /// Generates an image from text and returns the response as a Texture2D.
         /// </summary>
         /// <param name="input"></param>
