@@ -3,12 +3,10 @@
   "displayName": "Hugging Face API",
   "version": "0.8.0",
   "unity": "2020.3",
-  "description": "A Unity plugin for making API calls to the Hugging Face API.",
+  "description": "A Unity plugin for making API calls to the Hugging Face API.\n\nForked from HuggingFace's GitHub repository https://github.com/huggingface/unity-api",
   "keywords": ["huggingface", "api", "chatbot"],
   "author": {
-      "name": "Dylan Ebert",
-      "email": "dylan@huggingface.co",
-      "url": "https://github.com/huggingface/unity-api"
+      "name": "KokelSan"
     },
   "dependencies": {
   "com.unity.textmeshpro": "3.0.6",
